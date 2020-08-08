@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical-7</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #container {
+        border: 1px solid whitesmoke;
+        box-shadow: 0px 0px 5px 5px lightgray;
+        font-size: 35px;
+        padding: 15px;
+        width: 1200px;
+        margin: auto;
+      }
+      #header {
+        height: 80px;
+        background-color: grey;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        border-radius: 15px;
+      }
+      #banner {
+        background-color: lightskyblue;
+        height: 700px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        border-radius: 15px;
+      }
+      #sections {
+        text-align: center;
+        margin: 15px auto;
+        font-weight: bold;
+      }
+      #circles {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+      #circle {
+        width: 240px;
+        height: 240px;
+        background-color: orange;
+        border-radius: 50%;
+        margin: 15px;
+      }
+      #box {
+        margin-bottom: 15px;
+      }
+      #box::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      #left {
+        width: 577px;
+        height: 515px;
+        float: left;
+        background-color: grey;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        border-radius: 15px;
+      }
+      #right {
+        float: right;
+      }
+      #article {
+        height: 160px;
+        width: 577px;
+        background-color: tomato;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        border-radius: 15px;
+      }
+      #rectangles {
+        margin-bottom: 10px;
+      }
+      #rect {
+        background-color: turquoise;
+        height: 300px;
+        width: 240px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        margin: 20px;
+        border-radius: 15px;
+      }
+      #footer {
+        height: 80px;
+        background-color: violet;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <p>Header</p>
+      </div>
+      <div id="banner">Banner</div>
+      <div id="sections">Section-1</div>
+      <div id="circles">
+        <div id="circle"></div>
+        <div id="circle"></div>
+        <div id="circle"></div>
+        <div id="circle"></div>
+      </div>
+      <div id="box">
+        <div id="sections">Section-2</div>
+        <div id="left">Main Content</div>
+        <div id="right">
+          <div id="article">Article-1</div>
+          <div id="article">Article-2</div>
+          <div id="article">Article-3</div>
+        </div>
+      </div>
+      <div id="sections">Section-3</div>
+      <div id="rectangles">
+        <div id="rect"></div>
+        <div id="rect"></div>
+        <div id="rect"></div>
+        <div id="rect"></div>
+      </div>
+      <div id="sections">Section-4</div>
+      <div id="footer">Footer</div>
+    </div>
+  </body>
+</html>
