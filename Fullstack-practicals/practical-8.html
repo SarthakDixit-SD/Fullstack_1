@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical-8</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+      }
+      .NavBar {
+        border: 1px;
+        width: 100%;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        display: flex;
+        flex-direction: row;
+        background-color: grey;
+        height: 50px;
+        position: fixed;
+      }
+      .nav-items {
+        display: flex;
+        flex-direction: row;
+        padding-left: 65%;
+      }
+      li {
+        padding-top: 10px;
+        font-size: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 15px;
+      }
+      a:hover {
+        background-color: red;
+      }
+      #background {
+        width: 100%;
+        height: 20%;
+
+        display: inline-block;
+      }
+      .team {
+        border-radius: 70%;
+        padding: 20px;
+      }
+      .card img {
+        width: 100%;
+        height: 200px;
+        border-radius: 8px;
+      }
+      .card {
+        width: 20%;
+        background-color: grey;
+        padding: 15px;
+        border-radius: 8px;
+        float: left;
+        margin: 20px 15px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .card p {
+        text-align: justify;
+        margin: 10px;
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      .card h3 {
+        text-align: center;
+        font-weight: bold;
+      }
+      .card a {
+        display: block;
+        padding: 10px;
+        margin-top: 10px;
+        text-decoration: none;
+        text-align: center;
+        background-color: teal;
+        color: white;
+        border-radius: 8px;
+        font-weight: medium;
+        align-items: baseline;
+      }
+      #footer {
+        margin-top: -20px;
+        margin-bottom: 8px;
+      }
+    </style>
+    <div class="NavBar">
+      <h1>GLA</h1>
+      <ul class="nav-items">
+        <li type="none"><a href="#home">Home</a></li>
+        <li type="none"><a href="#about">About Us</a></li>
+        <li type="none"><a href="#team">Team</a></li>
+        <li type="none"><a href="#contact">ContactUs</a></li>
+      </ul>
+    </div>
+  </head>
+  <body>
+    <div id="home">
+      <img
+        id="background"
+        src="../Image/prac-8/emile-perron-xrVDYZRGdw4-unsplash.jpg"
+      />
+      <h4 style="position: absolute; top: 10%; font-size: 40px; color: white;">
+        Practical-8
+      </h4>
+    </div>
+    <div id="team">
+      <h1 style="text-align: center; padding-top: 1%;">Team Members</h1>
+      <div style="padding-left: 250px;">
+        <img class="team" src="../Image/prac-8/1.png" />
+        <img class="team" src="../Image/prac-8/2.png" />
+        <img class="team" src="../Image/prac-8/3.png" />
+        <img class="team" src="../Image/prac-8/9.png" />
+      </div>
+    </div>
+    <div id="about">
+      <h1 style="text-align: center; padding-top: 1%;">About Us</h1>
+      <div style="display: flex; flex-direction: row; padding-left: 300px;">
+        <div
+          style="
+            background-color: grey;
+            width: 2000px;
+            height: 450px;
+            padding: 20px;
+          "
+        >
+          <h3 style="color: honeydew;">About Project</h3>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English. Many desktop publishing
+            packages and web page editors now use Lorem Ipsum as their default
+            model text, and a search for 'lorem ipsum' will uncover many web
+            sites still in their infancy. Various versions have evolved over the
+            years, sometimes by accident, sometimes on purpose (injected humour
+            and the like).It is a long established fact that a reader will be
+            distracted by the readable content of a page when looking at its
+            layout.
+          </p>
+        </div>
+        <div style="padding-left: 25px; width: 4000px;">
+          <img
+            style="width: 50%; height: 160px;"
+            src="../Image/prac-8/p1.jpg"
+          />
+          <img
+            style="width: 50%; height: 160px;"
+            src="../Image/prac-8/p2.jpeg"
+          />
+          <img
+            style="width: 50%; height: 160px;"
+            src="../Image/prac-8/p3.jpg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="Technologies">
+      <h1 style="text-align: center; padding-top: 1%;">Technologies Used</h1>
+
+      <div style="padding-left: 15px;">
+        <div class="card">
+          <img src="../Image/html image.png" alt="HTML" />
+          <h3>Introduction to HTML</h3>
+          <p>
+            HTML stands for Hypertext Markup Language, and it is the most widely
+            used language to write Web Pages. Hypertext refers to the way in
+            which Web pages (HTML documents) are linked together.
+          </p>
+          <a
+            href="https://sarthakdixit-sd.github.io/Fullstack_1/Fullstack-practicals/prac-5.1.html"
+            >Read More</a
+          >
+        </div>
+
+        <div class="card">
+          <img src="../Image/css image.png" alt="CSS" />
+          <h3>Introduction to CSS</h3>
+          <p>
+            CSS is short for Cascading Style Sheets, and is the preferred way
+            for setting the look and feel of a website. Cascading Style Sheets
+            (CSS) is a markup language responsible for how your web pages will
+            look like.
+          </p>
+          <a
+            href="https://sarthakdixit-sd.github.io/Fullstack_1/Fullstack-practicals/prac-5.2.html"
+            >Read More</a
+          >
+        </div>
+
+        <div class="card">
+          <img src="../Image/javascript image.png" alt="JS" />
+          <h3>Introduction to JavaScript</h3>
+          <p>
+            JavaScript was initially created to “make web pages alive”. The
+            programs in this language are called scripts. They can be written
+            right in a web page’s HTML and run automatically as the page loads.
+          </p>
+
+          <a
+            href="https://sarthakdixit-sd.github.io/Fullstack_1/Fullstack-practicals/prac-5.3.html"
+            >Read More</a
+          >
+        </div>
+
+        <div class="card">
+          <img src="../Image/bootstrap image.png" alt="BOOTSTRAP" />
+          <h3>Introduction to Bootstrap</h3>
+          <p>
+            Bootstrap is a free and open-source tool collection for creating
+            responsive websites and web applications. It is the most popular
+            HTML, CSS, and JavaScript framework for developing responsive,
+            mobile-first web sites.
+          </p>
+
+          <a
+            href="https://sarthakdixit-sd.github.io/Fullstack_1/Fullstack-practicals/prac-5.4.html"
+            >Read More</a
+          >
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <div>
+        <h1 style="text-align: center; padding-top: 1%;">Contact</h1>
+
+        <div style="text-align: center; font-size: small; padding: 10px;">
+          Website Template for Practical-8 ©
+          <a style="color: black;" href="https://www.beta-labs.in/"
+            >Beta-labs</a
+          >
+        </div>
+
+        <div style="text-align: center; font-size: small;">
+          <a style="color: black;" href="#top">Back to top</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

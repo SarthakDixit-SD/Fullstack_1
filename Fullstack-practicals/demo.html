@@ -3,169 +3,205 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>navigation</title>
+    <title>Practical-8</title>
     <style>
       * {
-        padding: 0px;
         margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
         font-family: Arial, Helvetica, sans-serif;
       }
+      #container {
+        border: 1px solid lightgrey;
+        box-shadow: 0px 0px 5px 5px lightgray;
+        width: 1400px;
+        margin: 5px auto;
+        padding: 15px;
+      }
+      #header {
+        background: gray;
+        height: 90px;
+        margin-bottom: 15px;
+      }
       ul {
-        list-style: none;
-        background-color: orange;
-        width: 100%;
+        list-style-type: none;
+        text-align: center;
         overflow: hidden;
-        position: fixed;
-        top: 0px;
       }
       ul li {
-        float: left;
+        display: inline-block;
+        margin: 15px;
       }
       ul li a {
-        text-align: center;
-        width: 100px;
-        display: block;
         text-decoration: none;
-        color: black;
-        padding: 20px;
-        font-weight: bold;
+        color: white;
+        font-size: 35px;
+        display: block;
+        padding: 10px 20px;
+        text-transform: uppercase;
       }
       ul li a:hover {
-        background-color: darkred;
-        color: white;
+        background: white;
+        color: black;
       }
-      #con {
+      #banner {
+        height: 800px;
+        position: relative;
+      }
+      #banner-img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        overflow: hidden;
+      }
+      #banner-text {
+        position: absolute;
+        font-size: 60px;
+        font-weight: bold;
+        color: white;
+        top: 15px;
+        left: 15px;
+      }
+      #team {
+        height: 400px;
+        border: 2px solid red;
+      }
+      #text {
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        margin-bottom: 15px;
+      }
+      #circles {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        margin: 15px 0px;
+      }
+      #team-circles {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        background: white;
+        margin: 0px 20px;
+      }
+      #team-img {
+        border-radius: 50%;
+        padding: 40px;
+        size: 100%;
+      }
+      #about-us {
+        margin-bottom: 15px;
+        border: 1px solid green;
+        height: 680px;
+      }
+      #about-us::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      #left {
+        width: 700px;
+        height: 600px;
+        float: left;
+        background-color: grey;
+        color: white;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+      }
+      #right {
+        float: right;
+      }
+      #article {
+        height: 186px;
+        width: 650px;
+        background-color: tomato;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        border-radius: 15px;
+      }
+      p {
         text-align: justify;
-        padding: 20px;
-        margin-top: 50px;
+        font-size: 20px;
+      }
+      #art-img {
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     </style>
   </head>
   <body>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Work</a></li>
-      <li><a href="#">Team</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-    <div id="con">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolore
-      aliquam doloribus ex esse, maxime nam totam est? Consequuntur et eaque
-      sequi perspiciatis optio eius quisquam, numquam earum amet nisi culpa
-      officiis placeat alias ea nostrum sint, dolorem consectetur architecto
-      quod beatae rem at maiores aliquam. Id quod est nesciunt illum eaque
-      excepturi perspiciatis Lorem ipsum dolor sit amet consectetur, adipisicing
-      elit. Culpa, eum delectus quam perferendis quisquam odit vel, ut odio
-      laudantium, commodi nemo adipisci corporis qui labore quasi numquam. Omnis
-      quia nam sunt, tenetur iure, error, obcaecati consequatur ullam enim
-      doloribus impedit harum cum illo dolore praesentium. Numquam doloremque
-      maxime neque aut incidunt, sunt illo amet, repellendus rem ipsum minus cum
-      inventore nostrum. Iste voluptates nobis ex id nam asperiores, voluptas
-      debitis minima maxime neque dicta illo assumenda veritatis. Modi, amet.
-      Voluptatem odio similique necessitatibus sequi unde magnam suscipit quidem
-      et blanditiis animi ut voluptatibus debitis cumque atque nam explicabo
-      veritatis ipsam, quia voluptates dolorem, repellat modi impedit ad dolor.
-      Odit unde asperiores magnam repudiandae omnis consequuntur, quisquam
-      labore. Voluptatum atque earum voluptas deleniti et. Omnis sapiente odio,
-      blanditiis perferendis quam recusandae molestiae explicabo laudantium
-      soluta. Quasi, odit tempore inventore doloribus ab rerum iste, iusto
-      pariatur tempora corrupti reiciendis nemo. Consequuntur facilis molestias,
-      hic omnis accusamus ut ducimus quaerat provident pariatur quod ab in,
-      aliquid quae eius suscipit ratione totam. Quasi porro at corporis fuga
-      dolores qui ipsam, iusto suscipit non magni beatae ab atque facere hic
-      nemo quibusdam? Ducimus veniam, tempora molestias commodi quidem
-      voluptatum reprehenderit nihil quo mollitia modi eius voluptatibus ad
-      dolores. Quam, animi, maiores praesentium illum temporibus neque,
-      inventore ad tempora ipsum nesciunt nemo. Consectetur vel mollitia
-      dignissimos, doloribus magni doloremque dolor sint ducimus debitis labore
-      odio deserunt obcaecati ea voluptates vitae explicabo cumque perspiciatis
-      quibusdam saepe nemo delectus sequi architecto! Perspiciatis, pariatur?
-      Vitae amet quo fugit distinctio dolorem nemo sed cumque placeat iusto modi
-      assumenda, minus corporis, neque eum similique necessitatibus quos cum
-      officia labore aut repellendus. Praesentium, beatae! Placeat facere, non
-      nostrum quasi in dolor sed maxime culpa inventore dicta odio rerum officia
-      aliquid quod pariatur. Dolor labore perferendis totam! Aspernatur iure hic
-      itaque a necessitatibus quis recusandae voluptas beatae praesentium
-      expedita eveniet, laboriosam maiores cupiditate esse, fuga ut? Autem
-      necessitatibus praesentium esse ipsa quo ducimus nulla labore fugiat!
-      Alias ab, rerum veniam, quibusdam reprehenderit sit deleniti quod tempora
-      adipisci esse amet possimus est minima cum necessitatibus iste. Quos illo
-      blanditiis architecto ad labore, voluptate quas deserunt tempora corrupti
-      facilis ratione ducimus molestiae pariatur ipsum quo itaque odit saepe
-      explicabo vero, libero impedit velit quaerat ipsam. Et nisi illum at ab
-      debitis maiores, ut aliquam. Sed saepe ad ut sequi ipsa odio eos provident
-      non! Impedit molestias accusantium ipsum magnam architecto fugit inventore
-      recusandae, debitis amet magni est accusamus tempore autem expedita!
-      Debitis fuga eligendi labore molestias. Aliquid odio natus illum veniam
-      quam neque aperiam tempore unde repellat, omnis exercitationem porro
-      excepturi quidem? Ex mollitia molestias ab explicabo magni nihil, ipsum
-      magnam accusamus, aliquam consequuntur laboriosam similique voluptas
-      numquam exercitationem! Aut enim facere, vitae veniam rem inventore, eaque
-      quod maxime ex distinctio sunt dignissimos odit aliquid voluptatum
-      adipisci necessitatibus aspernatur omnis? Quo voluptate atque quae!
-      Adipisci, in quod nisi enim repellat quo cum quaerat eaque velit numquam
-      ratione sequi commodi ad soluta quas a iusto saepe cumque debitis ipsam
-      magni nesciunt quibusdam accusantium? Sit quibusdam itaque corrupti!
-      Eligendi at optio consequuntur, voluptatibus sapiente eius reprehenderit
-      unde amet explicabo quidem laborum mollitia quod itaque perferendis ab
-      quasi omnis ducimus distinctio accusamus modi magni. Tempore, quibusdam
-      pariatur amet tenetur ullam maxime nulla optio ut excepturi expedita quis
-      facilis dolore qui doloribus. Optio, quia. Mollitia corporis a adipisci
-      quis! Quibusdam ipsa provident, recusandae eaque expedita quod dignissimos
-      dicta numquam laboriosam, molestias in assumenda quia esse alias optio,
-      excepturi culpa. Maxime, quam. Facilis voluptatibus vel nemo delectus
-      expedita neque reiciendis, veniam repellat doloremque sunt, ducimus saepe.
-      Voluptas facilis nisi at aliquam incidunt odit officia iure facere qui
-      similique commodi sit saepe, dolorum laboriosam nulla porro ipsa tempore,
-      repudiandae corporis dignissimos deleniti dolorem! Eveniet nulla
-      distinctio sunt omnis doloremque, ipsa molestiae placeat soluta nam vel
-      fugiat harum nisi voluptatibus, assumenda expedita facere consectetur
-      nobis hic quia deleniti ratione. Iure vel nulla at omnis ipsa! Rem
-      voluptatum reprehenderit cumque cupiditate corporis, delectus at minima
-      quia odit repellendus eos. Omnis alias expedita ducimus cupiditate sit eos
-      illum facere quae soluta ut quibusdam itaque amet, optio aliquid neque
-      veritatis cum laudantium, hic nulla. Aliquam natus iste numquam. Delectus
-      aspernatur dolores tempora maxime debitis reprehenderit magnam quod, neque
-      nostrum id impedit, minus totam numquam. Cupiditate ipsa iste dolore at?
-      Quaerat saepe ad obcaecati adipisci nulla, voluptatem suscipit, quisquam
-      alias repellat commodi officiis et recusandae sint eius iusto expedita
-      enim exercitationem quis quod deserunt eos corporis! Incidunt ratione
-      quaerat rem asperiores ducimus mollitia deleniti, adipisci voluptas eaque
-      minima optio reiciendis ex, totam ea aut sit in magnam molestias qui earum
-      modi cum labore! Quas illum a omnis culpa debitis obcaecati cupiditate
-      ipsum totam assumenda magnam earum reiciendis delectus rerum molestias,
-      eligendi est provident voluptatum repellendus sunt at ullam, perferendis
-      voluptas. Facere eaque illo at asperiores aliquam fugit, voluptates
-      nesciunt soluta tempore nostrum perspiciatis aliquid vero eum tenetur
-      commodi dolorem, expedita quo harum quia exercitationem illum officiis
-      quae dolore! Eum quasi eius labore reiciendis soluta consequatur quos
-      voluptates architecto, harum amet, nisi nesciunt nostrum. Mollitia beatae
-      temporibus nihil cum omnis nisi autem quo ipsum. Fugiat porro ipsam harum
-      qui magni blanditiis quibusdam officia explicabo, necessitatibus nam
-      architecto, similique dicta repellat modi excepturi sapiente omnis
-      inventore ratione enim facere labore laudantium natus libero? Odio
-      reiciendis facere optio fugit, rem laudantium eos unde non aliquam
-      exercitationem fugiat quidem aperiam similique impedit, ab tenetur
-      explicabo corrupti quibusdam libero. Impedit, blanditiis aut, ad
-      distinctio dicta alias id consequuntur veniam amet sint, temporibus
-      assumenda suscipit. Est provident consequuntur perspiciatis libero, illo
-      quidem sapiente ipsum exercitationem rem vero, enim ea voluptatum! Cum
-      dolor similique dolorum tempore molestiae, iusto impedit ipsam ipsa autem
-      aut, odio ad temporibus libero exercitationem? Maiores excepturi deleniti
-      dolore libero cupiditate consequuntur quae odio doloremque, ad mollitia
-      architecto error a sequi! Omnis assumenda possimus reiciendis aut
-      similique, voluptas eum, accusantium dignissimos consequuntur magnam sit
-      provident iure expedita nesciunt hic itaque illum. Quisquam sed totam
-      velit necessitatibus recusandae quasi corporis facere consectetur
-      obcaecati dolorum. Optio numquam eos aliquid necessitatibus voluptatibus?
-      Nulla dolores laboriosam sunt, hic delectus totam aspernatur praesentium
-      magni soluta? voluptas quisquam, eligendi voluptate debitis velit dolorum
-      tempora consequuntur rem quo ea quae molestiae ratione dolores blanditiis
-      deserunt obcaecati? Quo necessitatibus quia corrupti recusandae odio minus
-      consectetur eos, perspiciatis laborum. Magni pariatur, soluta mollitia vel
-      rem error nemo similique voluptate consectetur. Voluptate blanditiis quod
-      veritatis modi.
+    <div id="container">
+      <div id="header">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Technologies</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div id="banner">
+        <img
+          id="banner-img"
+          src="../Image/prac-8/emile-perron-xrVDYZRGdw4-unsplash.jpg"
+          alt="background image"
+        />
+        <div id="banner-text">Practical-8</div>
+      </div>
+      <div id="team">
+        <div id="text">Team Members</div>
+        <div id="circles">
+          <div id="team-circles">
+            <img id="team-img" src="../Image/prac-8/1.png" alt="" />
+          </div>
+          <div id="team-circles">
+            <img id="team-img" src="../Image/prac-8/2.png" alt="" />
+          </div>
+          <div id="team-circles">
+            <img id="team-img" src="../Image/prac-8/3.png" alt="" />
+          </div>
+          <div id="team-circles">
+            <img id="team-img" src="../Image/prac-8/9.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div id="about-us">
+        <div id="text">About Us</div>
+        <div id="left">
+          <h1>About Projects</h1>
+          <br />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
+            voluptatibus cumque. Expedita eaque rem quia! Voluptatum
+            reprehenderit laborum voluptas numquam labore deserunt velit iure
+            optio, maxime hic, maiores ipsa illo laboriosam sint molestiae
+            excepturi. Doloremque vero esse quia cum? Laudantium eos nihil
+            ducimus ab aliquam a minima quos adipisci perferendis neque
+            reiciendis molestias inventore odio atque eveniet fugiat dignissimos
+            asperiores ea, eaque officiis doloribus ex maxime quidem? Dolorem
+            exercitationem eum ipsa alias qui, quo rerum reprehenderit animi
+            atque, voluptatum facere in nulla sed tempore nihil, molestias iusto
+            id itaque hic doloribus et praesentium recusandae necessitatibus.
+            Reprehenderit molestiae esse eum doloremque?
+          </p>
+        </div>
+        <div id="right">
+          <div id="article">
+            <img id="art-img" src="../Image/prac-8/p1.jpg" />
+          </div>
+          <div id="article">Article-2</div>
+          <div id="article">Article-3</div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
