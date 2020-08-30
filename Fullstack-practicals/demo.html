@@ -3,7 +3,194 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Navigation bar</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      #header {
+        width: 100%;
+        height: 80px;
+        background-color: gray;
+        padding: 0px 20px;
+      }
+      #header h2 {
+        line-height: 80px;
+        float: left;
+        color: white;
+      }
+      #header #menu {
+        list-style: none;
+        float: right;
+      }
+      #menu li {
+        display: inline-block;
+        line-height: 80px;
+      }
+      #menu li a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 0px 20px;
+        transition: 0.4s;
+      }
+      #menu li a:hover,
+      #show-button:hover,
+      #hide-button:hover {
+        color: skyblue;
+      }
+      #show-button,
+      #hide-button {
+        font-size: 30px;
+        line-height: 80px;
+        color: white;
+        transition: 0.4s;
+        display: none;
+      }
+      #show-button {
+        float: right;
+      }
+
+      #check {
+        position: absolute;
+        visibility: hidden;
+        z-index: -10;
+      }
+      @media (max-width: 800px) {
+        #show-button,
+        #hide-button {
+          display: block;
+        }
+        #menu {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 100%;
+          height: 100vh;
+          background-color: #333;
+          text-align: center;
+          padding: 80px 0px;
+          transition: 0.7s;
+          line-height: normal;
+        }
+        #check:checked ~ #menu {
+          right: 0;
+        }
+        #menu li {
+          display: block;
+        }
+        #menu li a {
+          display: block;
+        }
+        #hide-button {
+          position: absolute;
+          right: 20px;
+          top: 10px;
+        }
+      }
+      #con {
+        padding: 20px;
+      }
+      #con img {
+        width: 100%;
+        max-width: 700px;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+      #con p {
+        text-align: justify;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div id="header">
+      <h2>INDIA</h2>
+      <input type="checkbox" id="check" />
+      <label for="check" id="show-button">
+        <i class="fa fa-bars"></i>
+      </label>
+      <div id="menu">
+        <ul>
+          <li><a href="#">About India</a></li>
+          <li><a href="#">Regions</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Experiences</a></li>
+          <li><a href="#">Travel</a></li>
+          <label for="check" id="hide-button">
+            <i class="fa fa-times"></i>
+          </label>
+        </ul>
+      </div>
+      <div id="con">
+        <img src="../Image/wall.jpeg" alt="" />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+          aliquid repellat veritatis nemo officiis repudiandae esse velit,
+          eveniet itaque? Dolores optio suscipit distinctio recusandae. Porro
+          perspiciatis dolorem, nostrum maxime recusandae architecto corporis
+          facilis quis, harum nobis nihil vero natus delectus illo aut, ullam
+          magni cumque odit placeat itaque? Perspiciatis explicabo reiciendis
+          adipisci itaque voluptatibus cupiditate fugit sit, dicta quas commodi
+          quam perferendis, cumque deserunt delectus veniam accusantium, qui
+          debitis! Iure ut soluta quia quaerat maxime aspernatur vel, ducimus
+          eius quis ipsum magni ea possimus minus pariatur? Maiores eius et
+          veritatis dicta asperiores minima amet dolore nobis placeat
+          necessitatibus, officiis ratione libero excepturi labore, enim
+          incidunt fuga vitae modi similique, ipsum quisquam. Nobis itaque
+          tempora suscipit neque? Alias magnam recusandae quae ea laboriosam
+          ratione iste quisquam, eius deleniti provident similique tenetur
+          fugiat quasi qui quia enim magni aliquid? Nihil itaque quas doloribus
+          ex facilis quis alias atque, asperiores et, laudantium at inventore
+          quaerat exercitationem reprehenderit quidem. Sed sint animi doloribus
+          beatae amet consequuntur id voluptates nostrum! Impedit nemo alias
+          libero? Vel hic tempora tempore reprehenderit fugiat, minus cum
+          corrupti? Quaerat minima voluptatibus quidem! Ea porro illo minima,
+          impedit earum quod velit in perspiciatis consectetur optio praesentium
+          explicabo sit delectus dolores quibusdam quae. Nostrum molestias nam
+          vel voluptate voluptates mollitia exercitationem, blanditiis
+          consectetur aspernatur quibusdam velit iure accusantium quisquam
+          excepturi! Expedita tempora voluptas magni quo! Voluptatibus porro
+          exercitationem optio voluptatum cumque accusamus cupiditate ullam
+          consequuntur dolores possimus velit, maxime expedita fugiat, atque hic
+          eius enim corrupti a placeat aperiam! Temporibus est eligendi
+          excepturi perspiciatis quod eum quisquam aspernatur voluptatem beatae
+          unde nihil tempore ut, consectetur inventore facilis, rem voluptatibus
+          laudantium! Cumque amet excepturi a ad dolore eum reiciendis odio
+          aliquid corrupti ratione, quisquam enim illo harum aperiam beatae
+          voluptates in assumenda animi nobis temporibus ut, ex commodi!
+          Voluptate error quae explicabo? Quam aperiam veniam, mollitia nihil
+          nostrum et magnam, in odit saepe temporibus sapiente dolor praesentium
+          maiores cum quasi sed placeat a repudiandae consequatur adipisci
+          perspiciatis consequuntur molestiae exercitationem! Officia, debitis
+          placeat suscipit est id culpa delectus impedit deserunt fuga pariatur
+          sequi dicta facere illo enim nesciunt tempore doloribus voluptas
+          veniam consectetur! Tempore nihil quis culpa ipsam totam consequatur
+          quas voluptates impedit numquam unde a, eaque repellendus animi
+          blanditiis eum? Modi esse odit, voluptatibus voluptatem, possimus
+          corrupti libero mollitia nam voluptatum pariatur debitis? Nostrum
+          asperiores dolorum iure consequuntur cupiditate hic fuga quia
+          quibusdam sint porro odio, tempore quis exercitationem ab quaerat
+          aperiam nam inventore! Rerum, reprehenderit provident id aperiam
+          laboriosam, dolores praesentium est rem ex esse pariatur vel delectus
+          velit necessitatibus asperiores? Esse ullam corrupti porro molestiae
+          ipsa. Aspernatur voluptatem est sequi. Aliquid, architecto? Nisi, quod
+          neque rem ipsa labore saepe delectus ea totam adipisci qui nulla fugit
+          vitae obcaecati eos repellat molestiae error nobis dolorem voluptatum
+          sapiente corporis. Unde nam harum ipsam fugit ducimus minima cumque.
+          Quibusdam quas distinctio aspernatur natus voluptatem aut vitae quia
+          consectetur in necessitatibus ipsa vel, amet numquam expedita
+          exercitationem a ad iste quos nam quasi omnis beatae nostrum hic ab!
+          Quod cumque voluptatem ad quibusdam ipsum!
+        </p>
+      </div>
+    </div>
+  </body>
 </html>

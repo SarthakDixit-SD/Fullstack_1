@@ -7,271 +7,250 @@
     <style>
       * {
         margin: 0px;
-        padding: 0px;
+        padding: 0;
         box-sizing: border-box;
         font-family: Arial, Helvetica, sans-serif;
       }
-      #container {
-        border: 1px solid lightgrey;
-        box-shadow: 0px 0px 5px 5px lightgray;
-        width: 1400px;
-        margin: 5px auto;
-        padding: 15px;
+      html {
+        scroll-padding-top: 70px;
+        scroll-behavior: smooth;
       }
-      #header {
-        background: gray;
-        height: 70px;
-        margin-bottom: 15px;
-        position: sticky;
-        top: 0;
-        z-index: 1;
-        padding: 5px;
-      }
-      ul {
-        list-style-type: none;
-        text-align: center;
-        overflow: hidden;
-      }
-      ul li {
-        display: inline-block;
-      }
-      ul li a {
-        text-decoration: none;
-        color: white;
-        font-size: 35px;
-        display: block;
-        padding: 10px 20px;
-        text-transform: uppercase;
-      }
-      ul li a:hover {
-        background: white;
-        color: black;
-      }
-      #banner {
-        height: 800px;
-        position: relative;
-      }
-      #banner-img {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        overflow: hidden;
-      }
-      #banner-text {
-        position: absolute;
-        font-size: 60px;
-        font-weight: bold;
-        color: white;
-        top: 15px;
-        left: 15px;
-      }
-      #team {
-        height: 400px;
-      }
-      #text {
-        text-align: center;
-        font-weight: bold;
-        font-size: 40px;
-        margin-bottom: 15px;
-      }
-      #circles {
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        margin: 15px 0px;
-      }
-      #team-img {
-        margin: 0px 20px;
-        border-radius: 50%;
-        padding: 40px;
-        size: 100%;
-      }
-      #about-us {
-        margin-bottom: 15px;
 
-        height: 680px;
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        padding: 15px;
+        margin: 0px auto;
       }
-      #about-us::after {
+      .header {
+        width: 1170px;
+        height: 80px;
+        background: grey;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        top: 0px;
+        margin-bottom: 15px;
+        position: fixed;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 24px;
+        padding: 10px 40px;
+      }
+      .navbar a:hover {
+        background-color: white;
+        color: black;
+        margin-bottom: 15px;
+      }
+      .banner {
+        margin-top: 80px;
+        height: 700px;
+        background-image: url("../Image/prac-8/emile-perron-xrVDYZRGdw4-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .banner h2 {
+        color: white;
+        font-size: 70px;
+        padding-left: 30px;
+        padding-top: 25px;
+      }
+      h1 {
+        font-size: 40px;
+        padding: 25px 0;
+        text-align: center;
+      }
+      .circle-container {
+        margin: 15px auto;
+        width: 100%;
+      }
+      .circle-container::after {
         content: "";
         display: block;
         clear: both;
       }
-      #left {
-        width: 700px;
-        height: 600px;
+      .img-circle {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
         float: left;
-        background-color: lightslategray;
+        margin-left: 40px;
+        margin-bottom: 15px;
+      }
+      .about-container {
+        width: 100%;
+      }
+      .about-container::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .left {
+        height: 550px;
+        background: grey;
+        width: 50%;
+        float: left;
         color: white;
         padding: 10px;
-        margin-bottom: 10px;
-        border-radius: 15px;
       }
-      #about-us p {
+      .left h2 {
+        text-align: left;
+        padding-bottom: 15px;
+      }
+      .left > p {
         text-align: justify;
         font-size: 20px;
       }
-      #right {
+      .right {
+        width: 48%;
+        height: 550px;
         float: right;
       }
-      #article {
-        height: 186px;
-        width: 650px;
-        background-color: tomato;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 15px;
-        border-radius: 15px;
-        overflow: hidden;
-      }
-      #technologies {
-        height: 600px;
-      }
-      .box {
-        background-color: rgb(10, 236, 206);
-        border-radius: 10px;
-        width: 300px;
-        height: 450px;
-        float: left;
-        margin: 20px;
-        padding: 15px;
-      }
-      .box img {
-        width: 100%;
-        height: 180px;
-        border-radius: 10px;
-      }
-      p {
-        text-align: justify;
-        font-size: 19px;
-      }
-      .boldp {
-        font-weight: 600;
-        font-size: 20px;
+      .artical {
+        height: 31%;
+        background: red;
+        margin-bottom: 10px;
         text-align: center;
-        padding: 6px;
+        font-size: 30px;
+        font-weight: bolder;
+        padding: 5px;
       }
-      .box h1 {
-        text-align: justify;
-        text-transform: uppercase;
-        color: white;
-        font-weight: bold;
+      #p1 {
+        background-image: url(../Image/prac-8/p1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
       }
-      .box a {
-        background-color: red;
-        border-radius: 8px;
+      #p2 {
+        background-image: url(../Image/prac-8/p2.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      #p3 {
+        background-image: url(../Image/prac-8/p3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .tech-container {
         width: 100%;
-        text-align: center;
-        font-size: 20px;
-        text-decoration: none;
-        color: white;
+        margin: 15px auto;
+      }
+      .tech-container::after {
+        content: "";
+        clear: both;
         display: block;
-        margin: 0px auto;
-        padding: 3px 0px 5px;
       }
-      .box a:hover {
+      .techbox {
+        width: 20%;
+        margin-left: 50px;
+        border-radius: 15px;
+        float: left;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+        background-color: thistle;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+      .techbox > img {
+        width: 100%;
+        margin-bottom: 8px;
+      }
+      .techbox > h4 {
+        text-align: center;
+      }
+      .techbox > p {
+        margin: 10px;
+        font-size: 15px;
+        text-align: justify;
+        line-height: 20px;
+        color: white;
+      }
+      .techbox > a {
+        color: white;
+        padding: 10px;
+        font-size: 18px;
+        display: block;
+        background: red;
+        border-radius: 8px;
+        text-align: center;
+      }
+      .techbox > a:hover {
         background-color: blue;
       }
-      .box a:active {
-        background-color: orange;
-      }
-      #footer {
-        height: 200px;
-      }
-      #foot-content {
-        height: 100px;
-        background-color: hotpink;
-        padding: 30px;
-      }
-      #footer p {
+      .footer {
+        font-size: 16px;
+        color: black;
         text-align: center;
-        font-size: 20px;
+        padding: 20px;
+        background: cyan;
       }
     </style>
   </head>
   <body>
-    <div id="container">
-      <a id="back-to-top"></a>
-      <div id="header">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#aboutus">About Us</a></li>
-          <li><a href="#technologies">Technologies</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <a id="home"></a>
-      <div id="banner">
-        <img
-          id="banner-img"
-          src="../Image/prac-8/emile-perron-xrVDYZRGdw4-unsplash.jpg"
-          alt="background image"
-        />
-        <div id="banner-text">Practical-8</div>
-      </div>
-      <a id="team"></a>
-      <div id="team">
-        <div id="text">Team Members</div>
-        <div id="circles">
-          <div id="team-circles">
-            <img id="team-img" src="../Image/prac-8/1.png" alt="" />
-          </div>
-          <div id="team-circles">
-            <img id="team-img" src="../Image/prac-8/2.png" alt="" />
-          </div>
-          <div id="team-circles">
-            <img id="team-img" src="../Image/prac-8/3.png" alt="" />
-          </div>
-          <div id="team-circles">
-            <img id="team-img" src="../Image/prac-8/9.png" alt="" />
-          </div>
+    <div class="container">
+      <div class="header">
+        <div class="navbar">
+          <a href="#top">Home</a>
+          <a href="#team">Team</a>
+          <a href="#aboutus">About us</a>
+          <a href="#technology">Technologies</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
-      <a id="aboutus"></a>
-      <div id="about-us">
-        <div id="text">About Us</div>
-        <div id="left">
-          <h1>About Projects</h1>
-          <br />
+      <a name="top"></a>
+      <div class="banner">
+        <h2>Practical-8</h2>
+      </div>
+      <a name="team"></a>
+      <h1>Team Members</h1>
+      <div class="circle-container">
+        <img class="img-circle" src="../Image/prac-8/1.png" />
+        <img class="img-circle" src="../Image/prac-8/2.png" />
+        <img class="img-circle" src="../Image/prac-8/3.png" />
+        <img class="img-circle" src="../Image/prac-8/9.png" />
+      </div>
+      <a name="aboutus"></a>
+      <h1>About Us</h1>
+      <div class="about-container">
+        <div class="left">
+          <h2>About projects</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
-            voluptatibus cumque. Expedita eaque rem quia! Voluptatum
-            reprehenderit laborum voluptas numquam labore deserunt velit iure
-            optio, maxime hic, maiores ipsa illo laboriosam sint molestiae
-            excepturi. Doloremque vero esse quia cum? Laudantium eos nihil
-            ducimus ab aliquam a minima quos adipisci perferendis neque
-            reiciendis molestias inventore odio atque eveniet fugiat dignissimos
-            asperiores ea, eaque officiis doloribus ex maxime quidem? Dolorem
-            exercitationem eum ipsa alias qui, quo rerum reprehenderit animi
-            atque, voluptatum facere in nulla sed tempore nihil, molestias iusto
-            id itaque hic doloribus et praesentium recusandae necessitatibus.
-            Reprehenderit molestiae esse eum doloremque?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
+            illo aut commodi sit, nisi similique error eveniet praesentium unde
+            placeat dolore nesciunt fugit aliquam iure incidunt. Labore,
+            accusantium? Eveniet ipsam molestias labore facilis, voluptates sit
+            alias, hic assumenda dicta, neque iure obcaecati magni rem vitae
+            maxime commodi praesentium accusantium doloribus tenetur sint
+            aliquam incidunt laborum. Eligendi, odio unde nam numquam autem
+            atque corporis dolor eveniet. Corrupti quibusdam aliquam excepturi
+            ea, quod quisquam similique? Cupiditate consequatur iusto eligendi
+            molestiae. Officiis hic nam nulla ea? Sunt magnam reiciendis
+            repellendus at cupiditate provident aliquam, quisquam autem, nulla
+            enim dolorem veniam, voluptates quos expedita!
           </p>
         </div>
-        <div id="right">
-          <div id="article">
-            <img src="../Image/prac-8/p1.jpg" />
-          </div>
-          <div id="article">
-            <img src="../Image/prac-8/p2.jpeg" />
-          </div>
-          <div id="article">
-            <img src="../Image/prac-8/p3.jpg" />
-          </div>
+        <div class="right">
+          <div class="artical" id="p1">Project-1</div>
+          <div class="artical" id="p2">Project-2</div>
+          <div class="artical" id="p3">Project-3</div>
         </div>
       </div>
-      <a id="technologies"></a>
-      <div id="technologies">
-        <div id="text">Team Members</div>
-        <div class="box">
+      <a name="technology"></a>
+      <h1>Technologies</h1>
+      <div class="tech-container">
+        <div class="techbox">
           <img src="../Image/html image.png" />
-          <p class="boldp">Introduction to HTML</p>
+          <h4>Introduction to HTML</h4>
           <p>
-            HTML stands for Hyper Text Markup Language. It is used to design web
-            pages using markup language. HTML is the combination of Hypertext
-            and Markup language. Hypertext defines the link between the web...
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ad quae
+            ut voluptatem fuga consectetur accusamus vel hic, voluptas deleniti,
+            saepe adipisci architecto tempora! Animi nostrum nihil esse natus
+            nam!
           </p>
           <a
             href="https://sarthakdixit-sd.github.io/Fullstack_1/Fullstack-practicals/prac-5.1 html.html"
@@ -279,14 +258,14 @@
             >Read More</a
           >
         </div>
-        <div class="box">
+        <div class="techbox">
           <img src="../Image/css image.png" />
-          <p class="boldp">Introduction to CSS</p>
+          <h4>Introduction to HTML</h4>
           <p>
-            CSS is short for Cascading Style Sheets, and is the preferred way
-            for setting the look and feel of a website. Cascading Style Sheets
-            (CSS) is a markup language responsible for how your web pages will
-            look...
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ad quae
+            ut voluptatem fuga consectetur accusamus vel hic, voluptas deleniti,
+            saepe adipisci architecto tempora! Animi nostrum nihil esse natus
+            nam!
           </p>
           <a
             href="https://sarthakdixit-sd.github.io/Fullstack_1/Fullstack-practicals/prac-5.2 css.html"
@@ -294,29 +273,14 @@
             >Read More</a
           >
         </div>
-        <div class="box">
-          <img src="../Image/bootstrap image.png" />
-          <p class="boldp">Introduction to Bootstrap</p>
-          <p>
-            Bootstrap is a free and open-source tool collection for creating
-            responsive websites and web applications. It is the most popular
-            HTML, CSS, and JavaScript framework for developing responsive,
-            mobile-first web sites...
-          </p>
-          <a
-            href="https://sarthakdixit-sd.github.io/Fullstack_1/Fullstack-practicals/prac-5.4 bootstrap.html"
-            target="_blank"
-            >Read More</a
-          >
-        </div>
-        <div class="box">
+        <div class="techbox">
           <img src="../Image/javascript image.png" />
-          <p class="boldp">Introduction to Javascript</p>
+          <h4>Introduction to HTML</h4>
           <p>
-            JavaScript is a cross-platform, object-oriented scripting language
-            used to make webpages interactive (e.g., having complex animations,
-            clickable buttons, popup menus, etc.). There are also more advanced
-            server...
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ad quae
+            ut voluptatem fuga consectetur accusamus vel hic, voluptas deleniti,
+            saepe adipisci architecto tempora! Animi nostrum nihil esse natus
+            nam!
           </p>
           <a
             href="https://sarthakdixit-sd.github.io/Fullstack_1/Fullstack-practicals/prac-5.3 javascript.html"
@@ -324,20 +288,29 @@
             >Read More</a
           >
         </div>
-      </div>
-      <a id="contact"></a>
-      <div id="footer">
-        <div id="text">Contact</div>
-        <div id="foot-content">
+        <div class="techbox">
+          <img src="../Image/bootstrap image.png" />
+          <h4>Introduction to HTML</h4>
           <p>
-            Website Template for Practice-8 @<a
-              href="https://www.beta-labs.in/p/html.html"
-              target="_blank"
-              >Beta-labs</a
-            >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ad quae
+            ut voluptatem fuga consectetur accusamus vel hic, voluptas deleniti,
+            saepe adipisci architecto tempora! Animi nostrum nihil esse natus
+            nam!
           </p>
-          <p><a href="#back-to-top">Back to top</a></p>
+          <a
+            href="https://sarthakdixit-sd.github.io/Fullstack_1/Fullstack-practicals/prac-5.4 bootstrap.html"
+            target="_blank"
+            >Read More</a
+          >
         </div>
+      </div>
+      <a name="contact"></a>
+      <h1>Contact</h1>
+      <div class="footer">
+        <p>Website Template for Practical-8 @
+        <a href="https://www.beta-labs.in/p/html.html" target="_blank">beta-labs</a></p>
+      </br>
+        <a href="#top">Back to top</a>
       </div>
     </div>
   </body>
